@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>suryacharan — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>suryacharan</h1>
+          <div style="color:var(--muted);font-size:13px">CSE Student • Frontend Developer in progress</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+  <h2>Hello — I'm <span style="color:var(--mint-600)">suryacharan</span></h2>
+        <p>A Computer Science student passionate about clean interfaces, small useful web apps, and learning modern JavaScript. I build responsive frontends and enjoy experimenting with UI design.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn secondary" href="#contact">Contact me</a>
+        </div>
+        <div class="grid projects" id="projects">
+          <div>
+            <h3 style="margin-top:18px">Selected projects</h3>
+            <div class="project">
+              <div class="title"><strong>Health Monitor UI</strong><span>HTML • CSS • JS</span></div>
+              <p style="margin:8px 0 0;color:var(--muted);font-size:14px">A responsive health monitoring frontend with input validation and local storage authentication.</p>
+            </div>
+            <div class="project">
+              <div class="title"><strong>Resume Builder</strong><span>HTML • JS</span></div>
+              <p style="margin:8px 0 0;color:var(--muted);font-size:14px">A step-by-step resume generator that exports clean printable resumes.</p>
+            </div>
+            <div class="project">
+              <div class="title"><strong>Auditorium Management</strong><span>PHP • MySQL</span></div>
+              <p style="margin:8px 0 0;color:var(--muted);font-size:14px">Booking system with admin and user views (DB integration).</p>
+            </div>
+          </div>
+          <aside class="card" style="height:fit-content">
+            <h4 style="margin:0 0 8px 0">Skills</h4>
+            <div class="skills">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>Node (basics)</li>
+              </ul>
+            </div>
+
+            <h4 style="margin:18px 0 8px 0">Quick Info</h4>
+            <p style="margin:0;color:var(--muted);font-size:14px">Open to internships • Always learning • Email below</p>
+          </aside>
+        </div>
+      </div>
+
+      <aside class="photo">
+        <div class="avatar">S</div>
+        <div style="text-align:center">
+          <div style="font-weight:700">suryacharan</div>
+          <div class="role">Aspiring Frontend Developer</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card" id="about" style="margin-top:22px">
+      <h3>About me</h3>
+      <p style="color:var(--muted);margin-top:8px">I'm a CSE student who loves building frontends and learning backend basics. I enjoy turning ideas into simple, usable web pages. Currently improving JavaScript skills and exploring React.</p>
+    </section>
+
+    <section class="card" id="contact" style="margin-top:18px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+      <div>
+        <h3>Contact</h3>
+        <p style="color:var(--muted);margin-top:6px">Email: <strong>your.email@example.com</strong></p>
+        <p style="color:var(--muted);margin-top:6px">GitHub: <strong>@surya1729-prog</strong></p>
+      </div>
+      <form style="margin-left:auto;min-width:260px">
+        <label style="display:block;font-weight:600;margin-bottom:6px">Send a quick message</label>
+        <input placeholder="Your name" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(7,33,38,0.06);margin-bottom:8px">
+        <input placeholder="Email" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(7,33,38,0.06);margin-bottom:8px">
+        <textarea placeholder="Message" rows="2" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(7,33,38,0.06);"></textarea>
+        <div style="margin-top:8px">
+          <button class="btn" type="button">Send</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      Crafted with care • © suryacharan • 2025
+    </footer>
+  </div>
+</body>
+</html>

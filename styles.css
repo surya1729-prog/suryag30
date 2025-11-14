@@ -1,0 +1,51 @@
+:root{
+  --bg:#f6fffb;
+  --mint:#2dd4bf;
+  --mint-600:#10b981;
+  --ink:#072126;
+  --muted:#617d7a;
+  --card:#ffffff;
+  --glass: rgba(255,255,255,0.6);
+  --radius:18px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#eafff7);color:var(--ink);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:48px auto;padding:28px}
+
+header{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--mint),var(--mint-600));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(16,185,129,0.18)}
+.brand h1{margin:0;font-size:18px;letter-spacing:0.2px}
+nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-weight:600}
+
+.hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:center}
+.card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:0 10px 30px rgba(7,33,38,0.06)}
+
+.intro h2{margin:0 0 10px 0;font-size:32px}
+.intro p{margin:0;color:var(--muted);line-height:1.55}
+.cta{margin-top:18px}
+.btn{display:inline-block;padding:10px 16px;border-radius:12px;background:var(--mint);color:white;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(45,212,191,0.14)}
+.btn.secondary{background:transparent;color:var(--ink);border:1px solid rgba(7,33,38,0.06);box-shadow:none;margin-left:12px}
+
+.photo{display:flex;flex-direction:column;align-items:center;gap:12px}
+.avatar{width:220px;height:220px;border-radius:18px;background:linear-gradient(135deg,#dffbf5,#bff3e9);display:flex;align-items:center;justify-content:center;font-size:36px;color:var(--mint-600);font-weight:800}
+.role{color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:24px;margin-top:22px}
+.projects .project{padding:18px;border-radius:14px;background:linear-gradient(180deg,rgba(16,185,129,0.03),transparent);margin-bottom:12px}
+.projects .title{display:flex;align-items:center;justify-content:space-between}
+.projects h3{margin:0}
+
+.skills ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.skills li{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--ink);font-weight:600}
+
+footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+
+/* responsive */
+@media (max-width:920px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .photo{order:-1}
+  .avatar{width:160px;height:160px}
+}
